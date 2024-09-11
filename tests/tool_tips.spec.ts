@@ -17,12 +17,12 @@ test("tooltips", async ({ page }) => {
     expect(tooltiptxt).toBe('You hovered over the Button')
     
 })
-test("tooltipss", async ({ page }) => {
+test("tooltipsExercise", async ({ page }) => {
  
     const tooltip = new ToolTipsPage(page)
 
     await page.goto("/")
-    await tooltip.GoToToolTip(page)
-    await tooltip.Hover(page)
+    await tooltip.goToToolTip(page)
+    await tooltip.hover(page)
     
 })
